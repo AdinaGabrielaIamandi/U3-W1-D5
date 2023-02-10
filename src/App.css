@@ -60,7 +60,7 @@ footer {
 #movie {
   width: 100%;
   object-fit: cover;
-  aspect-ratio: 1/1.5;
+  aspect-ratio: 0.5/0.8;
   transition: transform 0.2s;
 }
 

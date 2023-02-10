@@ -3,16 +3,15 @@ import { Container, Nav, Row, Col, Button } from "react-bootstrap";
 const MyFooter = () => {
   return (
     <Container>
-      {" "}
       <footer style={{ backgroundColor: "#221f1f", color: "white" }}>
         <Row className="text-center mt-5">
           <Col xs={6} className="offset-3">
             <Row>
               <Col className="text-left mb-2">
-                <i class="fa fa-facebook footer-icon"></i>
+                {/* <i class="fa fa-facebook footer-icon"></i>
                 <i class="fa fa-instagram footer-icon"></i>
                 <i class="fa fa-twitter footer-icon"></i>
-                <i class="fa fa-youtube footer-icon"></i>
+                <i class="fa fa-youtube footer-icon"></i> */}
               </Col>
             </Row>
             <Row className="row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4">

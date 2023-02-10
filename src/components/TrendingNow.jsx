@@ -52,10 +52,10 @@ class TrendingNow extends Component {
     }
 
     return (
-      <Container fluid style={{ backgroundColor: "#221f1f" }}>
+      <Container fluid style={{ backgroundColor: "#221f1f" }} className="mt-3">
         <h4>Trending Now</h4>
         <Row>
-          {movies.map((movie) => (
+          {movies.slice(4).map((movie) => (
             <Col key={movie.imdbID} xs={12} sm={6} lg={3} xl={2} className="mb-2">
               <Image src={movie.Poster} alt="movie" id="movie" />
             </Col>

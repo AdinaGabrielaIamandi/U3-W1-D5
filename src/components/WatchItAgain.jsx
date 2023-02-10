@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-class WhatchItAgain extends Component {
+class WatchItAgain extends Component {
   state = {
     movies: [],
     isLoading: true,
@@ -52,10 +52,10 @@ class WhatchItAgain extends Component {
     }
 
     return (
-      <Container fluid style={{ backgroundColor: "#221f1f" }}>
-        <h4>Trending Now</h4>
+      <Container fluid style={{ backgroundColor: "#221f1f" }} className="mt-3">
+        <h4>Watch it again</h4>
         <Row>
-          {movies.map((movie) => (
+          {movies.slice(4).map((movie) => (
             <Col key={movie.imdbID} xs={12} sm={6} lg={3} xl={2} className="mb-4">
               <Image src={movie.Poster} alt="movie" id="movie" />
             </Col>
@@ -66,4 +66,4 @@ class WhatchItAgain extends Component {
   }
 }
 
-export default WhatchItAgain;
+export default WatchItAgain;

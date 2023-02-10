@@ -6,9 +6,9 @@ const MyHeader = () => {
   return (
     <header style={{ backgroundColor: "#221f1f", color: "white" }}>
       <MyNavbar />
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">
-          <h2 class="mb-4 pl-4 pr-4">TV Shows</h2>
+      <div className="d-flex justify-content-between">
+        <div className="d-flex">
+          <h2 className="mb-4 pl-4 pr-4">TV Shows</h2>
           <Dropdown>
             <Dropdown.Toggle
               as={Button}
