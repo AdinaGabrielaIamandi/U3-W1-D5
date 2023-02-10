@@ -30,7 +30,7 @@ const MyNavbar = () => {
         <FaSearch className="mx-3" />
         <div>Kids</div>
         <FaBell className="mx-3" />
-        <FaUser className="mx-3" />
+        <FaUser />
       </Navbar.Collapse>
     </Navbar>
   );
