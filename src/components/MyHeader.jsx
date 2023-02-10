@@ -18,7 +18,7 @@ const MyHeader = () => {
             >
               Genres &nbsp;
             </Dropdown.Toggle>
-            <Dropdown.Menu style={{ backgroundColor: "#221f1f" }}>
+            <Dropdown.Menu style={{ backgroundColor: "#221f1f" }} variant="dark">
               <Dropdown.Item className="text-light">Comedy</Dropdown.Item>
               <Dropdown.Item className="text-light">Drama</Dropdown.Item>
               <Dropdown.Item className="text-light">Thriller</Dropdown.Item>
