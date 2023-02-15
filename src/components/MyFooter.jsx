@@ -50,7 +50,7 @@ const MyFooter = () => {
               </Col>
               <Col>
                 <Row>
-                  <Col class="footer-links">
+                  <Col className="footer-links">
                     <Nav.Link href="#" alt="footer link" className="text-secondary">
                       Help Center
                     </Nav.Link>
@@ -65,7 +65,7 @@ const MyFooter = () => {
               </Col>
               <Col>
                 <Row>
-                  <Col class="footer-links">
+                  <Col className="footer-links">
                     <Nav.Link href="#" alt="footer link" className="text-secondary">
                       Gift Cards
                     </Nav.Link>
