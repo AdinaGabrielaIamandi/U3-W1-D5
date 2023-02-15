@@ -1,22 +1,22 @@
 import { Navbar, Nav, Image, NavLink } from "react-bootstrap";
 import { FaSearch, FaBell, FaUser } from "react-icons/fa";
-
+import { Link, useLocation } from "react-router-dom";
 const MyNavbar = () => {
+  const location = useLocation();
   return (
     <Navbar expand="lg" variant="dark" style={{ backgroundColor: "#221f1f", color: "white" }}>
       <NavLink className="pl-0">
         <Image src="./assets/images/logo.png" style={{ width: "100px", height: "55px" }} />
       </NavLink>
-
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
         <Nav className="mr-auto">
-          <Nav.Link href="#home" className="font-weight-bold">
+          <Link path="/" className={`nav-link font-weight-bold ${location.pathname === "" ? "active" : ""}`} to="/">
             Home
-          </Nav.Link>
-          <Nav.Link href="#link" className="active font-weight-bold">
+          </Link>
+          <Link className={`nav-link font-weight-bold ${location.pathname === "" ? "active" : ""}`} to="/tv-shows">
             TV Shows
-          </Nav.Link>
+          </Link>
           <Nav.Link href="#link" className="font-weight-bold">
             Movies
           </Nav.Link>

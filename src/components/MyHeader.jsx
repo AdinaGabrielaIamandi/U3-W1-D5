@@ -10,7 +10,7 @@ const MyHeader = () => {
       <MyNavbar />
       <div className="d-flex justify-content-between">
         <div className="d-flex">
-          <Link className={`nav-link ${location.pathname === "/tv-shows/" ? "active" : ""}`} to="/tv-shows/">
+          <Link className={`nav-link ${location.pathname === "/tv-shows" ? "active" : ""}`} to="/tv-shows">
             <h2 className="mb-4 pl-4 pr-4">TV Shows</h2>
           </Link>
 

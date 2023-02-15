@@ -1,5 +1,5 @@
 const TvShows = () => {
-  return <div className="text-light">Sono un component!!!!!!!</div>;
+  return;
 };
 
 export default TvShows;
