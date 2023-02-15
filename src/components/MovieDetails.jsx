@@ -11,7 +11,7 @@ const MovieDetails = () => {
       let response = await fetch(`https://www.omdbapi.com/?apikey=5a784329&i=${idParams.movieId}`);
       if (response.ok) {
         let comments = await response.json();
-        await setDetails(comments);
+        setDetails(comments);
         console.log(comments);
       } else {
         console.log("error");
