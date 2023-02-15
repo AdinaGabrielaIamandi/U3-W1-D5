@@ -59,7 +59,7 @@ class NowReleases extends Component {
           {movies.slice(4).map((movie) => (
             <Col key={movie.imdbID} xs={12} sm={6} lg={3} xl={2} className="mb-4">
               <Image src={movie.Poster} alt="movie" id="movie" />
-              <Link className="btn btn-secondary" to={`/movie-details/:` + movie.imdbID}>
+              <Link className="btn btn-secondary" to={`/movie-details/${movie.imdbID}`}>
                 Show details
               </Link>
             </Col>
