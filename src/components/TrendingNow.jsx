@@ -11,8 +11,7 @@ class TrendingNow extends Component {
 
   fetchMovies = async () => {
     try {
-      const response = await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=5a784329&s=friends");
-
+      const response = await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=5a784329&s=" + this.props.title);
       if (response.ok) {
         const data = await response.json();
 
@@ -53,7 +52,7 @@ class TrendingNow extends Component {
 
     return (
       <Container fluid style={{ backgroundColor: "#221f1f" }} className="mt-3">
-        <h4>Trending Now</h4>
+        <h4>{this.props.title}</h4>
         <Row>
           {movies.slice(4).map((movie) => (
             <Col key={movie.imdbID} xs={12} sm={6} lg={3} xl={2} className="mb-2">

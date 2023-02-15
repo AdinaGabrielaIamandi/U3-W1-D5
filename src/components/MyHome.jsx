@@ -3,14 +3,14 @@ import WhatchItAgain from "./WatchItAgain";
 import NewReleases from "./NewReleases";
 import { Container } from "react-bootstrap";
 
-const MyMain = () => {
+const MyHome = () => {
   return (
     <Container fluid>
-      <TrendingNow />
-      <WhatchItAgain />
-      <NewReleases />
+      <TrendingNow title="Friends" />
+      <WhatchItAgain title="Love" />
+      <NewReleases title="Harry Potter" />
     </Container>
   );
 };
 
-export default MyMain;
+export default MyHome;

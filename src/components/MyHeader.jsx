@@ -1,14 +1,19 @@
 import MyNavbar from "./MyNavbar";
 import { BsFillGridFill, BsFillGrid3X3GapFill } from "react-icons/bs";
 import { Dropdown, Button } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 const MyHeader = () => {
+  const location = useLocation();
   return (
     <header style={{ backgroundColor: "#221f1f", color: "white" }}>
       <MyNavbar />
       <div className="d-flex justify-content-between">
         <div className="d-flex">
-          <h2 className="mb-4 pl-4 pr-4">TV Shows</h2>
+          <Link className={`nav-link ${location.pathname === "/tv-shows/" ? "active" : ""}`} to="/tv-shows/">
+            <h2 className="mb-4 pl-4 pr-4">TV Shows</h2>
+          </Link>
+
           <Dropdown>
             <Dropdown.Toggle
               as={Button}
